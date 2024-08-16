@@ -1,0 +1,76 @@
+    body {
+      width:50vw;
+      margin-left: auto;
+      margin-right: auto;
+      font-family:'Times New Roman', Times, serif;
+      background:image('img\bg.jpg')
+    }
+    #taskList {
+      margin-top: 20px;
+      list-style: none;
+    }
+
+    .task-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .input-container {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    #taskInput {
+      flex-grow: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    #addTask {
+        padding: 1ch;
+        margin-left: 1;
+        border-radius: 10px;
+        border: 0px;
+        background-color: #1078d1;
+        color: #fff;
+        box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
+        cursor: pointer; 
+        outline: none; 
+        transition: 0.2s all;
+
+    }
+
+    #addTask:active{ 
+        transform: scale(0.98); 
+        /* Scaling button to 0.98 to its original size */ 
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+        /* Lowering the shadow */ 
+    }
+
+    deleteButton {
+      padding: 1ch;
+      margin-left: auto;
+      border-radius: 10px;
+      border: 0px;
+      background-color: #dd4444;
+      color: #fff;
+      box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
+      cursor: pointer; 
+      outline: none; 
+      transition: 0.2s all;
+    }
+
+    span {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: large;
+      color: #1078d1;
+    }
