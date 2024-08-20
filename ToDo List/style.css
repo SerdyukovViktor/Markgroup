@@ -74,3 +74,12 @@
       font-size: large;
       color: #1078d1;
     }
+
+    #taskList li span {
+      text-decoration: none;
+  }
+  
+  #taskList li input[type="checkbox"]:checked ~ span {
+      text-decoration: line-through;
+      color: #ccc; /* Optional: Set a faded color for the text */
+  }

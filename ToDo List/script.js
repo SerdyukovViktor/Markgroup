@@ -43,6 +43,7 @@ function renderTasks() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.checked = task.completed;
+        checkbox.id = `taskCheckbox-${index}`;
         checkbox.addEventListener('change', () => {
             //Обновить статус завершения задачи
             task.completed = checkbox.checked;
@@ -54,10 +55,15 @@ function renderTasks() {
         //Добавить текст таски
         const taskTextElement = document.createElement('span');
         taskTextElement.textContent = task.text;
+
         //При клике на текст сработает чекбокс
         taskTextElement.addEventListener("click", () =>{
             checkbox.checked = !checkbox.checked;
             task.completed = checkbox.checked;
+            if(taskTextElement){
+                //taskTextElement.
+                taskTextElement.id = `task-text-${index}`;
+            }
             saveTasks();
         });
         // То же самое для смартфона
