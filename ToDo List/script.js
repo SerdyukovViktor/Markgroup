@@ -61,7 +61,6 @@ function renderTasks() {
             checkbox.checked = !checkbox.checked;
             task.completed = checkbox.checked;
             if(taskTextElement){
-                //taskTextElement.
                 taskTextElement.id = `task-text-${index}`;
             }
             saveTasks();
@@ -70,6 +69,9 @@ function renderTasks() {
         taskTextElement.addEventListener("touchend", () =>{
             checkbox.checked = !checkbox.checked;
             task.completed = checkbox.checked;
+            if(taskTextElement){
+                taskTextElement.id = `task-text-${index}`;
+            }
             saveTasks();
         });
         listItem.appendChild(taskTextElement);
