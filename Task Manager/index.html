@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./client/css/style.css">
+    <title>Менеджер задач</title>
+</head>
+<body>
+    <div id="app">
+        <div class="section" id="auth-section">
+          <h2>Авторизация</h2>
+          <input type="text" id="username" placeholder="Имя пользователя">
+          <input type="password" id="password" placeholder="Пароль">
+          <button id="register-button">Зарегистрироваться</button>
+          <button id="login-button">Войти</button>
+        </div>
+    
+        <div class="section" id="user-section" >
+          <h2>Информация о пользователе</h2>
+          <p>Имя пользователя: <span id="user-username"></span></p>
+          <button id="logout-button">Выйти</button>
+        </div>
+    
+        <div class="section" id="task-section" style="display: none;">
+          <h2>Задачи</h2>
+          <input type="text" id="task-title" placeholder="Заголовок задачи">
+          <textarea id="task-description" placeholder="Описание задачи"></textarea>
+          <button id="add-task-button">Добавить задачу</button>
+          <ul id="task-list"></ul>
+        </div>
+      </div>
+    
+      <script src="./client/app.js"></script>
+</body>
+</html>
