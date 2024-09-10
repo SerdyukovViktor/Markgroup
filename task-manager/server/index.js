@@ -8,7 +8,7 @@ const port = process.env.PORT || 3001;
 
 //ПОдключаемся к mongodb
 
-mongoose.connect('mongodb://localhost:27017/test-base', {       // поменить на актуальную базу
+mongoose.connect('mongodb://localhost:27017/task-manager-on-React', {       // поменить на актуальную базу
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
